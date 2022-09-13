@@ -1,14 +1,26 @@
-import Home from 'pages/Home';
-import { BrowserRouter, Route } from 'react-router-dom';
 
+import TabBar from 'components/TabBar';
+import Categories from 'pages/Categories';
+import Home from 'pages/Home/Home';
+import Reservations from 'pages/Reservations';
+import {
+    HashRouter as Router,
+    Switch,
+    Route,
+} from "react-router-dom";
 
-
-export const Routes = () => {
+const Routes: React.FC = () => {
     return (
-        <BrowserRouter>
-            <Route path="/">
-                <Home />
-            </Route>
-        </BrowserRouter>
+        <Router>
+            <TabBar />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/categories" component={Categories} />
+                <Route exact path="/reservations" component={Reservations} />
+            </Switch>
+        </Router>
+
     );
 };
+
+export default Routes

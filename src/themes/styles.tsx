@@ -14,6 +14,24 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
 
     body {
         background-color: ${({ theme }) => theme.colors.background};
+        padding: 20px 10vw
+    }
+    ol, ul {
+        list-style: none outside none;
+    }
+
+    a {
+        all:none;
+        text-decoration: none;
+        color: black;
+    }
+    
+    h1 {
+        font-size: 2.5em; 
+    }
+      
+    h2 {
+        font-size: 1.875em; 
     }
 
     `;

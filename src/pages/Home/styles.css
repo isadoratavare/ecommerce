@@ -1,0 +1,39 @@
+.banner {
+  margin: 20px 0px 0px;
+  padding: 5vw 1.5vw;
+  border-radius: 30px;
+  width: 100%;
+  background: #d5f0db;
+
+  display: flex;
+
+  background: url("../../assets/images/banner.png") no-repeat #d5f0db ;
+  background-size: contain;
+  background-position: top right;
+}
+
+.banner-container {
+  margin: 60px;
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-container > h1,
+span {
+  margin: 0.5vw;
+}
+
+.banner-container > h1 {
+  font-size: 3.2vw;
+  font-weight: bolder;
+  line-height: 1.2;
+}
+
+.subtitle{
+  font-size: 2vw;
+  font-weight: bold;
+  color: #0AAF60
+}

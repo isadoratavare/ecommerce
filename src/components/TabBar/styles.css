@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 3.5vw 0 3.5vw 
+}
+.nav {
+  display: flex;
+}
+
+li{
+    margin: 20px 20px;
+}
+
+.active{
+    color: #0AAF60;
+}
